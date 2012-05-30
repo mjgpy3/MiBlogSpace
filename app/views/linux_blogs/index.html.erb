@@ -1,6 +1,10 @@
 <div class="leftmodule">
 
-  <% @linux_blogs.each do |home_blog| %>
+  <% @linux_blogs.each do |blog| %>
+    <h2 class="typicalheader"><%= blog.header %></h2>
+    <p class="timestamp"><%= blog.author_name %> | at <%= blog.created_at %></p>
+    <p class="ptext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= blog.text_body %></p>
+    <hr style="color:black;"/>
   <% end %>
 </div>
 
