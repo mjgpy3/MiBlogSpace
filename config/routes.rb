@@ -1,4 +1,8 @@
 MiBlogSpace::Application.routes.draw do
+  resources :linux_blogs
+
+  resources :python_blogs
+
   resources :home_blogs
  
   root :to => "home_blogs#index"

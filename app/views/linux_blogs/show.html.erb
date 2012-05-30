@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Author name:</b>
+  <%= @linux_blog.author_name %>
+</p>
+
+<p>
+  <b>Header:</b>
+  <%= @linux_blog.header %>
+</p>
+
+<p>
+  <b>Text body:</b>
+  <%= @linux_blog.text_body %>
+</p>
+
+
+<%= link_to 'Edit', edit_linux_blog_path(@linux_blog) %> |
+<%= link_to 'Back', linux_blogs_path %>

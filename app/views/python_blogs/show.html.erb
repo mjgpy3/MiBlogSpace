@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Author name:</b>
+  <%= @python_blog.author_name %>
+</p>
+
+<p>
+  <b>Header:</b>
+  <%= @python_blog.header %>
+</p>
+
+<p>
+  <b>Text body:</b>
+  <%= @python_blog.text_body %>
+</p>
+
+
+<%= link_to 'Edit', edit_python_blog_path(@python_blog) %> |
+<%= link_to 'Back', python_blogs_path %>
