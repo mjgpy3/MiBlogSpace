@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MiBlogSpace</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="bodyinfo">
+  <head>
+    <title>MiBlogSpace</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="bodyinfo">
 
-<table style="background-color:#1C1C1C;padding:8px;">
-  <tr style="color:white;">
-    <td><%= link_to( image_tag( "HomeMenuOption.png"), "home_blogs#index" ) %></td>
-    <td><%= link_to( image_tag("PythonMenuOption.png"), "python_blogs#index" ) %></td>
-    <td><%= link_to( image_tag("LinuxMenuOption.png"), "linux_blogs#index" ) %></td>
-    <td><%= image_tag("ProjectsMenuOption.png") %></td>
-    <td><%= image_tag("AboutMenuOption.png") %></td>
-  </tr>
-</table>
+    <table style="background-color:#1C1C1C;padding:8px;">
+      <tr style="color:white;">
+        <td><%= link_to( image_tag( "HomeMenuOption.png"), "home_blogs#index" ) %></td>
+        <td><%= link_to( image_tag("PythonMenuOption.png"), "python_blogs#index" ) %></td>
+        <td><%= link_to( image_tag("LinuxMenuOption.png"), "linux_blogs#index" ) %></td>
+        <td><%= image_tag("ProjectsMenuOption.png") %></td>
+        <td><%= image_tag("AboutMenuOption.png") %></td>
+      </tr>
+    </table>
 
-<div class="rightmodule">
-  <h2>Recently Added</h2>
-  <hr />
-</div>
+    <div class="rightmodule">
+      <h2>Recently Added</h2>
+      <hr />
+    </div>
 
-<%= yield %>
-
-</body>
+    <%= yield %>
+    <div style="width:100%;float:left">
+      <p class="ptext">&copy; Copyright Michael Gilliland, 2012. All rights reserved</p>
+    </div>
+  </body>
 </html>
