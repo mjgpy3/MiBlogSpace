@@ -1,0 +1,27 @@
+<h1>Listing home_blogs</h1>
+
+<table>
+  <tr>
+    <th>Author name</th>
+    <th>Header</th>
+    <th>Text body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_blogs.each do |home_blog| %>
+  <tr>
+    <td><%= home_blog.author_name %></td>
+    <td><%= home_blog.header %></td>
+    <td><%= home_blog.text_body %></td>
+    <td><%= link_to 'Show', home_blog %></td>
+    <td><%= link_to 'Edit', edit_home_blog_path(home_blog) %></td>
+    <td><%= link_to 'Destroy', home_blog, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Home blog', new_home_blog_path %>
