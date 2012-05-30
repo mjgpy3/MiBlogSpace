@@ -2,7 +2,7 @@ class LinuxBlogsController < ApplicationController
   # GET /linux_blogs
   # GET /linux_blogs.json
   def index
-    @linux_blogs = LinuxBlog.all
+    @linux_blogs = LinuxBlog.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb

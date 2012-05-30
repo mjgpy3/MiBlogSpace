@@ -2,7 +2,7 @@ class PythonBlogsController < ApplicationController
   # GET /python_blogs
   # GET /python_blogs.json
   def index
-    @python_blogs = PythonBlog.all
+    @python_blogs = PythonBlog.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb

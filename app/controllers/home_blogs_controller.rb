@@ -2,7 +2,7 @@ class HomeBlogsController < ApplicationController
   # GET /home_blogs
   # GET /home_blogs.json
   def index
-    @home_blogs = HomeBlog.all
+    @home_blogs = HomeBlog.all.reverse
 
     respond_to do |format|
       format.html # index.html.erb
